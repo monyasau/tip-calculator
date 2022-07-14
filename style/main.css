@@ -1,3 +1,25 @@
+/* remember to change it to the online font */
+@font-face {
+	font-family: 'Space Mono';
+	src: url("./fonts/Space\ Mono.ttf") format("truetype");
+}
+* {
+    font-family: "Space Mono";
+}
 body {
-    background-color: #c5e4e7
+    background-color: #c5e4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container {
+
+}
+.header{
+    color: #00494d;
+}
+.app {
+    border: #fff solid ;
 }
