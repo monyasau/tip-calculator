@@ -1,25 +1,66 @@
 /* remember to change it to the online font */
 @font-face {
-	font-family: 'Space Mono';
-	src: url("./fonts/Space\ Mono.ttf") format("truetype");
+  font-family: "Space Mono";
+  font-weight: 700;
+  src: url("./fonts/Space\ Mono.ttf") format("truetype");
 }
 * {
-    font-family: "Space Mono";
+  font-family: "Space Mono";
 }
-body {
+
+/* colors */
+.light-cyan {
+  color: #c5e4e7;
+}
+.very-light-cyan {
+  color: #f4fafa;
+}
+/* colors end */
+
+/* bigger devices style*/
+@media screen and (min-width: 600px) {
+  /* For tablets: */
+  body {
+    background-color: black;
+  }
+}
+@media screen and (min-width: 734px) {
+  /* For desktop: */
+  body {
+    background-color: black;
+  }
+  /* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {} */
+}
+/* Bigger device style ends */
+@media only screen and (max-width: 600px) {
+  body {
     background-color: #c5e4e7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-
-}
-.container {
-
-}
-.header{
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .header {
     color: #00494d;
-}
-.app {
-    border-radius: 10px;
+  }
+  .app {
+    height: 90%;
+    width: 100%;
+    margin-top: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #ffffff;
+  }
+  .input-area {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+  }
+  .display-area {
+    background-color: #00494d;
+  }
 }
