@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
     <title>Tip calculator</title>
-</head>
-<body>
-    <!-- remember to change it to the online font -->
-    <div class="container">
-        <!-- <div class="header">
-            SPLITTER
-        </div> -->
-        <div class="app">
-           <div class="input-area">
-               Bill
-               <div class="amount-input">
-                   <span class="light-cyan"></span>
-               </div>
-           </div>
-           <div class="display-area">
+  </head>
 
-           </div>
+  <body>
+    <!-- remember to change it to the online font -->
+    <div class="header fs-5 text-center dark-cyan">SPLITTER</div>
+    <div class="cont">
+      <div class="app">
+        <section class="input-area">
+          <span class="dark-cyan fs-sm">Bill</span>
+          <div class="amount-input">
+            <span class="ms-3"
+              ><img src="./images/icon-dollar.svg" alt=""
+            /></span>
+            <span class="very-dark-cyan ms-auto me-3">142.55</span>
+          </div>
+          <section class="tip-selection-area my-3">
+            <span class="dark-cyan fs-sm">Select Tip %</span>
+            <div class="d-flex flex-wrap">
+              <button class="tip-btn col-5 me-auto mt-3 mb-1">5%</button>
+              <button class="tip-btn col-5 ms-auto mt-3 mb-1">10%</button>
+              <button class="tip-btn col-5 me-auto my-2">15%</button>
+              <button class="tip-btn col-5 ms-auto my-2">25%</button>
+              <button class="tip-btn col-5 me-auto my-2">50%</button>
+              <button class="custom-tip-btn light-cyan col-5 ms-auto my-2">
+                Custom
+              </button>
+            </div>
+          </section>
+          <section class="people-selection-area">
+            <span class="dark-cyan fs-sm">Number of People</span>
+            <div class="people-input">
+              <span class="light-cyan ms-3"
+                ><img src="./images/icon-person.svg" alt=""
+              /></span>
+              <span class="very-dark-cyan ms-auto me-3">5</span>
+            </div>
+          </section>
+        </section>
+        <div class="display-area">
+          <div class="tip-amount fs-sm d-flex">
+            <div class="col-5">
+              Tip Amount
+              <div class="fs-exsm dark-cyan">/ person</div>
+            </div>
+            <div class="col-5 text-end fs-2 primary">$4.27</div>
+          </div>
+          <div class="total-amount mt-3 fs-sm d-flex">
+            <div class="col-5">
+              Total
+              <div class="fs-exsm dark-cyan">/ person</div>
+            </div>
+            <div class="col-5 text-end fs-2 primary">$32.79</div>
+          </div>
+          <div class="reset-btn text-center mt-4 fs-sm very-dark-cyan">
+            RESET
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

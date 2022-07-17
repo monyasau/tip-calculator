@@ -1,19 +1,28 @@
 /* remember to change it to the online font */
 @font-face {
   font-family: "Space Mono";
-  font-weight: 700;
-  src: url("./fonts/Space\ Mono.ttf") format("truetype");
+  src: url("./fonts/Space\ Mono.ttf");
 }
 * {
   font-family: "Space Mono";
+  font-weight: 700;
 }
 
 /* colors */
-.light-cyan {
-  color: #c5e4e7;
+.very-dark-cyan {
+  color: #00494d;
+}
+.dark-cyan {
+  color: #5e7a7d;
 }
 .very-light-cyan {
   color: #f4fafa;
+}
+.light-cyan {
+  color: #7f9c9f;
+}
+.primary {
+  color: #26c0ab;
 }
 /* colors end */
 
@@ -36,31 +45,86 @@
 @media only screen and (max-width: 600px) {
   body {
     background-color: #c5e4e7;
-    height: 100vh;
+    /* height: 100%; */
     margin: 0;
+    padding-bottom: 100px;
   }
-  .container {
+  .cont {
     display: flex;
     height: 100%;
   }
   .header {
-    color: #00494d;
+    width: 100px;
+    line-break: anywhere;
+    letter-spacing: 10px;
+    margin: 20% auto;
   }
   .app {
-    height: 90%;
+    font-size: 24px;
+    height: 80%;
     width: 100%;
-    margin-top: auto;
+    /* margin-top: auto; */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-color: #ffffff;
   }
   .input-area {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
     background-color: transparent;
-    width: 30px;
-    height: 30px;
     padding: 10px;
   }
-  .display-area {
+  .amount-input {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #f4fafa;
+  }
+  .custom-tip-btn {
+    border: none;
+    background-color: #f4fafa;
+    border-radius: 5px;
+  }
+  .custom-tip-btn:hover {
+    background-color: #26c0ab;
+  }
+  .tip-btn {
+    padding: 5px 0;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
     background-color: #00494d;
+  }
+  .tip-btn:hover {
+    background-color: #26c0ab;
+  }
+  .people-input {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #f4fafa;
+  }
+  .display-area {
+    width: 74%;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    background-color: transparent;
+    padding: 20px;
+    background-color: #00494d;
+  }
+  .reset-btn {
+    padding: 5px 0;
+    border-radius: 5px;
+    background-color: #26c0ab;
   }
 }
