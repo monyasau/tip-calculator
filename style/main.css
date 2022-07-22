@@ -51,7 +51,39 @@
     padding: 10px;
     width: 50%;
   }
-
+  .display-area {
+    padding: 10px;
+    width: 50%;
+    background-color: #00494d;
+    border-radius: 15px;
+  }
+  .tip-btn-wrap{
+    /* width: 70%; */
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .tip-btn {
+    margin: 10px !important;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+    color: #ffffff;
+    background-color: #00494d;
+  }
+  .tip-btn:hover {
+    background-color: #26c0ab;
+  }
+  
+  .custom-tip-btn {
+    width: 30%;
+    border: none;
+    background-color: #f4fafa;
+    border-radius: 5px;
+  }
+  .custom-tip-btn:hover {
+    background-color: #26c0ab;
+  }
   /* Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {} */
 }
