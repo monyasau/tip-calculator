@@ -51,6 +51,16 @@
     padding: 10px;
     width: 50%;
   }
+  .amount-input {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #f4fafa;
+  }
   .display-area {
     padding: 10px;
     width: 50%;
@@ -66,7 +76,7 @@
     margin: 10px !important;
     padding: 10px 0;
     border-radius: 5px;
-    width: 30%;
+    width: 25%;
     border: none;
     color: #ffffff;
     background-color: #00494d;
