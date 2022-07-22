@@ -28,13 +28,17 @@
 
 /* bigger devices style*/
 @media screen and (min-width: 734px) {
+/* @media screen and (min-width: 600px) { */
   /* For desktop: */
   body {
     background-color: #c5e4e7;
     height: 100vh;
   }
-  .header{
-    /* margin: auto; */
+  .header {
+    width: 100px;
+    line-break: anywhere;
+    letter-spacing: 10px;
+    margin: 20% auto;
   }
   .cont {
     margin: auto;
@@ -44,10 +48,10 @@
     border-radius: 20px;
     height: 50%;
   }
-  .app{
+  .app {
     display: flex;
   }
-  .input-area{
+  .input-area {
     padding: 10px;
     width: 50%;
   }
@@ -62,12 +66,12 @@
     background-color: #f4fafa;
   }
   .display-area {
-    padding: 10px;
+    padding: 40px;
     width: 50%;
     background-color: #00494d;
     border-radius: 15px;
   }
-  .tip-btn-wrap{
+  .tip-btn-wrap {
     /* width: 70%; */
     flex-wrap: wrap;
     display: flex;
@@ -84,7 +88,7 @@
   .tip-btn:hover {
     background-color: #26c0ab;
   }
-  
+
   .custom-tip-btn {
     width: 30%;
     border: none;
@@ -93,6 +97,9 @@
   }
   .custom-tip-btn:hover {
     background-color: #26c0ab;
+  }
+  .tip-amount {
+    justify-content: space-between;
   }
   /* Extra small devices (phones, 600px and down)
 @media only screen and (max-width: 600px) {} */
@@ -103,7 +110,6 @@
     background-color: #c5e4e7;
     /* height: 100%; */
     margin: 0;
-    padding-bottom: 100px;
   }
   .cont {
     display: flex;
@@ -168,15 +174,23 @@
     height: 40px;
     background-color: #f4fafa;
   }
+  .tip-btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .display-area {
     width: 74%;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     text-align: start;
     background-color: transparent;
     padding: 20px;
     background-color: #00494d;
+  }
+  .tip-amount {
+    justify-content: space-between;
   }
   .reset-btn {
     padding: 5px 0;
