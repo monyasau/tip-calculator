@@ -9,6 +9,9 @@
 }
 
 /* colors */
+.white {
+  color: #ffffff;
+}
 .very-dark-cyan {
   color: #00494d;
 }
@@ -28,7 +31,7 @@
 
 /* bigger devices style*/
 @media screen and (min-width: 734px) {
-/* @media screen and (min-width: 600px) { */
+  /* @media screen and (min-width: 600px) { */
   /* For desktop: */
   body {
     background-color: #c5e4e7;
@@ -44,17 +47,19 @@
   }
   .cont {
     margin: auto;
-    height: 40%;
+    /* height: 40%; */
     width: 40%;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 20px;
   }
   .app {
-    height: 100%;
+    margin: 10px;
+    /* height: 100%; */
     display: flex;
   }
   .input-area {
+    margin-right: 20px;
     padding: 10px;
     width: 50%;
   }
@@ -94,6 +99,9 @@
   }
 
   .custom-tip-btn {
+    padding: 10px 0;
+    margin: 10px !important;
+
     width: 25%;
     border: none;
     background-color: #f4fafa;
@@ -102,7 +110,22 @@
   .custom-tip-btn:hover {
     background-color: #26c0ab;
   }
+  .people-input {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #f4fafa;
+  }
   .tip-amount {
+    justify-content: space-between;
+    margin: 0 0 40px 0;
+  }
+  .total-amount {
     justify-content: space-between;
   }
   /* Extra small devices (phones, 600px and down)
