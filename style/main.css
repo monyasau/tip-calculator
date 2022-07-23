@@ -52,11 +52,16 @@
     background-color: #ffffff;
     padding: 30px;
     border-radius: 20px;
+  box-shadow: 30px 20px 100px 30px #c7d8dab9;
   }
   .app {
     margin: 10px;
     /* height: 100%; */
     display: flex;
+  }
+  input{
+    background-color: transparent;
+    text-align: right;
   }
   .input-area {
     margin-right: 20px;
